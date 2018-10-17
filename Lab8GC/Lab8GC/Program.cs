@@ -10,6 +10,7 @@ namespace Lab8GC
     {
         public static int student;
         public static int decision;
+        public static int choice1;
 
         private static string[][] students = {new string[] {"Stephanie... I... I think","Pizza","Meming","the Northern Flicker"},
                 new string[] {"Tracy McAllistair", "Chicken", "Surfing","the Eastern Wild Turkey"},
@@ -76,11 +77,11 @@ namespace Lab8GC
         }
         static void Prompter()
         {
-            int choice1 = 0;
+            choice1 = 0;
             Console.WriteLine("");
             try
             {
-                choice1 = Int32.Parse(Console.ReadLine()) - 1;
+                choice1 = int.Parse(Console.ReadLine()) - 1;
             }
             catch(Exception)
             {
